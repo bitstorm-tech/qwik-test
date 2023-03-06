@@ -10,10 +10,10 @@ export default component$(() => {
         <section>
           <Header />
         </section>
-        <section class="flex-grow overflow-scroll">
+        <section class="flex-grow overflow-scroll mb-12">
           <Slot />
         </section>
-        <section>
+        <section class="w-screen fixed bottom-0">
           <Footer />
         </section>
       </main>
