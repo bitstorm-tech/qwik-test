@@ -6,14 +6,14 @@ import Header from "~/components/nav/header";
 export default component$(() => {
   return (
     <>
-      <main class="max-h-screen flex flex-col">
-        <section>
+      <main class="flex flex-col">
+        <section class="w-screen fixed top-0 bg-white">
           <Header />
         </section>
-        <section class="flex-grow overflow-scroll mb-12">
+        <section class="flex-grow overflow-scroll my-12">
           <Slot />
         </section>
-        <section class="w-screen fixed bottom-0">
+        <section class="w-screen fixed bottom-0 bg-white">
           <Footer />
         </section>
       </main>
